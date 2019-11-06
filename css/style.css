@@ -79,10 +79,21 @@ figcaption {
 }
 table {
   border-collapse: collapse;
+  text-align: left;
 }
 
 table, th, td {
+  width: 100%;
   border: 1px solid black;
+  padding: 4px;
+}
+
+.tabl{
+}
+
+.tabl th{
+  text-align: center;
+  color: #00b4c6;
 }
 
 .clearfix {
