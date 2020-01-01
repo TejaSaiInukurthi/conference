@@ -77,23 +77,50 @@ figcaption {
   line-height: 0;
   height: 0;
 }
-table {
+/*table {
   border-collapse: collapse;
   text-align: left;
 }
 
+table {
+  border-collapse: collapse;
+  text-align: left;
+}*/
+
 table, th, td {
   width: 100%;
   border: 1px solid black;
-  padding: 4px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: left;
 }
-
+/*tr:hover {background-color: #00b4c6;}
 .tabl{
-}
+}*/
 
-.tabl th{
+/*th {
+  background-color: #00b4c6;
+  color: white;
+}*/
+/*.tabl th{
   text-align: center;
   color: #00b4c6;
+}*/
+*/
+.hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+border-color:#00B4C6;
+} 
+
+.rounded{
+  height: 400px;
+  width: 400px;
 }
 
 .clearfix {
@@ -304,6 +331,11 @@ header
 
 .background-header .nav li a.active {
   color: #f55858 !important;
+}
+
+.rounded{
+  height: 400px;
+  width: 400px;
 }
 
 .header-area {
@@ -761,6 +793,10 @@ margin-top: 6em;
   height: 125px;
   width: 300px;
 }
+.image1{
+  height: 150px;
+  width: 300px;
+}
 @media (max-width: 991px) {
   .welcome-area .header-text {
     top: 55% !important;
@@ -781,6 +817,15 @@ margin-top: 6em;
     color: #fff;
     margin-bottom: 30px;
   }
+  .welcome-area .header-text .image {
+    width: 100%;
+    margin-top: 20px;
+    height: 80px;
+  }
+   .welcome-area .header-text .image1 {
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 820px) {
@@ -796,18 +841,16 @@ margin-top: 6em;
   .welcome-area .header-text p {
     margin-bottom: 30px;
   }
-  .welcome-area .header-text img {
+  .welcome-area .header-text .image {
+    width: 90%;
+    margin-top: 20px;
+    height: 70px;
+  }
+   .welcome-area .header-text .image1 {
     width: 80%;
     margin-top: 20px;
   }
-  .img{
-    margin-top: 1em;
-  }
-
-  .image{
-    width: 200px;
-    width: 60px;
-  }
+  
 }
 
 
@@ -819,7 +862,7 @@ margin-top: 6em;
   .img{
     margin-top:0px;
   }
-  .image{
+  .image,.image1{
     height: 50px
     max-width: 200px;
   }
@@ -851,13 +894,37 @@ margin-top: 6em;
     line-height: 22px;
     margin-bottom: 40px;
   }
-  .welcome-area .header-text img {
+  .welcome-area .header-text .image {
+    width: 60%;
+    margin-top: 0px;
+    height: 50px;
+  }
+  .welcome-area .header-text .image1 {
     width: 50%;
     margin-top: 0px;
-    height: 80px;
+    height: 100px;
   }
 }
 
+@media(max-width: 450px)
+{
+  .welcome-area .header-text .image {
+    width: 60%;
+    margin-top: 0px;
+    height: 40px;
+  }
+  .welcome-area .header-text .image1 {
+    width: 50%;
+    margin-top: 0px;
+    height: 85px;
+  }
+    .section{
+  text-align: left;
+}
+table,td,th{
+padding: 4px;
+}
+}
 @media (max-width: 330px) {
   .welcome-area .header-text h1 {
     font-weight: 600;
@@ -866,11 +933,22 @@ margin-top: 6em;
     margin-bottom: 10px !important;
     margin-top: 10px;
   }
- .welcome-area .header-text img {
+ .welcome-area .header-text .image1 {
     width: 50%;
     margin-top: 0px;
     height: 70px;
   }
+ .welcome-area .header-text .image {
+    width: 50%;
+    margin-top: 0px;
+    height: 40px;
+  }
+  .section{
+  text-align: left;
+}
+table,th,td{
+  padding: 1x;
+}
 }
 /*
 ---------------------------------------------
@@ -1138,6 +1216,11 @@ Speakers
   .owl-carousel .owl-nav {
     display: none !important;
   }
+}
+
+.im{
+  height: 500px;
+  width: 500px;
 }
 
 /*
